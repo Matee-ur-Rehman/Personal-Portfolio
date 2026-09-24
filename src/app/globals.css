@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   Design Tokens — Dark mode (default)
+   ========================================================================== */
+:root {
+  --bg-primary: #0a0a0c;
+  --bg-secondary: #101014;
+  --bg-tertiary: #17171c;
+
+  --border-subtle: #232329;
+  --border-default: #2e2e36;
+
+  --text-primary: #f2f2f0;
+  --text-secondary: #a3a3ad;
+  --text-tertiary: #6b6b75;
+
+  --accent: #4d8dff;
+  --accent-hover: #6ba0ff;
+  --accent-muted: rgb(77 141 255 / 12%);
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 30%);
+  --shadow-md: 0 4px 16px rgb(0 0 0 / 35%);
+
+  /* Spacing scale (8px base) */
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-6: 1.5rem; /* 24px */
+  --space-8: 2rem; /* 32px */
+  --space-12: 3rem; /* 48px */
+  --space-16: 4rem; /* 64px */
+  --space-24: 6rem; /* 96px */
+  --space-32: 8rem; /* 128px */
+  --space-48: 12rem; /* 192px */
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* Animation timing */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-micro: 150ms;
+  --duration-reveal: 450ms;
+  --duration-theme: 300ms;
+}
+
+/* ==========================================================================
+   Design Tokens — Light mode
+   ========================================================================== */
+:root[data-theme="light"] {
+  --bg-primary: #fafaf8;
+  --bg-secondary: #f2f2ef;
+  --bg-tertiary: #eaeae6;
+
+  --border-subtle: #e2e2dd;
+  --border-default: #d4d4ce;
+
+  --text-primary: #141416;
+  --text-secondary: #5c5c63;
+  --text-tertiary: #8a8a91;
+
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-muted: rgb(37 99 235 / 8%);
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 6%);
+  --shadow-md: 0 4px 16px rgb(0 0 0 / 8%);
+}
+
+/* ==========================================================================
+   Tailwind v4 theme mapping — exposes tokens as Tailwind utilities
+   e.g. bg-primary, text-secondary, border-default, font-display, font-mono
+   ========================================================================== */
+@theme inline {
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-tertiary: var(--bg-tertiary);
+
+  --color-border-subtle: var(--border-subtle);
+  --color-border-default: var(--border-default);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-muted: var(--accent-muted);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+
+  --font-display: var(--font-geist-sans), "General Sans", -apple-system, sans-serif;
+  --font-body: var(--font-inter), -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), "JetBrains Mono", monospace;
+}
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+* {
+  border-color: var(--border-subtle);
+}
+
+html {
+  color-scheme: dark;
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-inter), -apple-system, sans-serif;
+  transition: background-color var(--duration-theme) ease, color var(--duration-theme) ease;
+}
+
+/* Respect reduced motion preference globally */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
