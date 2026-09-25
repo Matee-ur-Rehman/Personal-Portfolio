@@ -1,3 +1,4 @@
+import ThemeScript from "@/components/layout/ThemeScript";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
@@ -32,6 +33,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} h-full antialiased`}
       suppressHydrationWarning
     >
+      <head>
+  <ThemeScript />
+</head>
       <body className="min-h-full flex flex-col">
   <Header />
   <main className="flex-1">{children}</main>
