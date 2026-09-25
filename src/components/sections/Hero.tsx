@@ -15,7 +15,7 @@ export default function Hero() {
             — AI/ML &amp; Software Development
           </p>
 
-          <h1 className="text-[clamp(3rem,6vw,5.5rem)] font-semibold leading-[1.05] tracking-[-0.02em] text-text-primary">
+          <h1 className="font-display text-[clamp(3rem,6vw,5.5rem)] font-semibold leading-[1.05] tracking-[-0.02em] text-text-primary">
             Matee Ur Rehman
           </h1>
 
