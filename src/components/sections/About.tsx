@@ -6,9 +6,9 @@ export default function About() {
     <section id="about" className="py-14 md:py-20 lg:py-32">
       <Container>
         <Reveal>
-          <p className="font-mono text-xs uppercase tracking-[0.08em] text-text-tertiary">
+          <h2 className="font-mono text-xs uppercase tracking-[0.08em] text-text-tertiary">
             01 — About
-          </p>
+          </h2>
 
           <div className="mt-6 max-w-[720px] space-y-4 text-lg leading-[1.65] text-text-secondary">
             <p>

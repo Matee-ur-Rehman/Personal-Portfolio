@@ -1,8 +1,8 @@
-import ThemeScript from "@/components/layout/ThemeScript";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import ThemeScript from "@/components/layout/ThemeScript";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -34,13 +34,21 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       suppressHydrationWarning
     >
       <head>
-  <ThemeScript />
-</head>
+        <ThemeScript />
+      </head>
       <body className="min-h-full flex flex-col">
-  <Header />
-  <main className="flex-1">{children}</main>
-  <Footer />
-</body>
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-[6px] focus:bg-accent focus:px-4 focus:py-2 focus:font-medium focus:text-bg-primary"
+        >
+          Skip to main content
+        </a>
+        <Header />
+        <main id="main-content" className="flex-1">
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }

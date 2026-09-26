@@ -12,9 +12,9 @@ export default function Projects() {
     <section id="projects" className="border-t border-border-subtle py-14 md:py-20 lg:py-32">
       <Container>
         <Reveal>
-          <p className="font-mono text-xs uppercase tracking-[0.08em] text-text-tertiary">
+          <h2 className="font-mono text-xs uppercase tracking-[0.08em] text-text-tertiary">
             03 — Projects
-          </p>
+          </h2>
 
           {projects.length === 0 ? (
             <p className="mt-6 max-w-[520px] text-base leading-[1.6] text-text-tertiary">

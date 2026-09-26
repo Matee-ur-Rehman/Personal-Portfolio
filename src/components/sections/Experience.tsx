@@ -35,9 +35,9 @@ export default function Experience() {
     <section id="experience" className="border-t border-border-subtle py-14 md:py-20 lg:py-32">
       <Container>
         <Reveal>
-          <p className="font-mono text-xs uppercase tracking-[0.08em] text-text-tertiary">
+          <h2 className="font-mono text-xs uppercase tracking-[0.08em] text-text-tertiary">
             04 — Experience
-          </p>
+          </h2>
 
           <div className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2">
             <TimelineColumn heading="Work" entries={experience} />
