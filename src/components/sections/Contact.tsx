@@ -7,8 +7,8 @@ export default function Contact() {
     <section id="contact" className="border-t border-border-subtle py-14 md:py-20 lg:py-32">
       <Container>
         <Reveal>
-          <h2 className="font-mono text-xs uppercase tracking-[0.08em] text-text-tertiary">
-            05 — Contact
+          <h2 className="font-mono text-sm uppercase tracking-[0.08em] text-text-tertiary">
+            <span className="font-semibold text-accent">05</span> — Contact
           </h2>
 
           <p className="mt-6 max-w-[520px] text-lg leading-[1.6] text-text-secondary">
