@@ -36,7 +36,7 @@ export default function Header() {
     >
       <Container className="flex h-16 items-center justify-between">
         <a href="#" className="font-mono text-sm text-text-secondary transition-colors duration-150 hover:text-text-primary">
-          MUR
+          MR
         </a>
 
         <nav aria-label="Primary" className="hidden md:flex md:items-center md:gap-8">
