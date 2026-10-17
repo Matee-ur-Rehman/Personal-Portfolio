@@ -8,12 +8,21 @@ export default function Contact() {
       <Container>
         <Reveal>
           <h2 className="font-mono text-sm uppercase tracking-[0.08em] text-text-tertiary">
-            <span className="font-semibold text-accent">05</span> — Contact
+            <span className="font-semibold text-accent">06</span> — Contact
           </h2>
 
-          <p className="mt-6 max-w-[520px] text-lg leading-[1.6] text-text-secondary">
-            Open to internships, full-time opportunities, and freelance work.
-          </p>
+          <div className="mt-6 max-w-[560px] space-y-3 text-lg leading-[1.6] text-text-secondary">
+            <p>
+              I&apos;m open to AI/ML internship opportunities, software
+              development roles, and collaborations on meaningful technical
+              projects.
+            </p>
+            <p>
+              If you&apos;re working on an interesting problem in Artificial
+              Intelligence or Machine Learning, I&apos;d be happy to connect
+              and discuss potential opportunities.
+            </p>
+          </div>
 
           <div className="mt-8 flex flex-col divide-y divide-border-subtle border-t border-border-subtle sm:max-w-[480px]">
             {contactChannels.map((channel) => (

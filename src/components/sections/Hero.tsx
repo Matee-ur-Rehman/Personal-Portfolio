@@ -1,13 +1,8 @@
 import Container from "@/components/layout/Container";
 
-const CORE_STACK = ["Python", "C++", "Java"];
-
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
-      {/* Soft accent-colored glow — background depth only, kept to a
-          single hue (no rainbow) to stay consistent with the design
-          system's "one accent, used with intent" principle. */}
       <div
         className="pointer-events-none absolute -top-40 left-[10%] h-[420px] w-[420px] rounded-full bg-accent/25 blur-[120px]"
         aria-hidden="true"
@@ -21,16 +16,24 @@ export default function Hero() {
         {/* Left column — identity */}
         <div className="animate-fade-slide-up">
           <p className="mb-4 font-mono text-[0.8125rem] uppercase tracking-[0.08em] text-accent">
-            — AI/ML &amp; Software Development
+            — AI/ML Engineer | Software Developer
           </p>
 
           <h1 className="font-display text-[clamp(3rem,6vw,5.5rem)] font-semibold leading-[1.05] tracking-[-0.02em]">
             <span className="text-gradient">Matee Ur Rehman</span>
           </h1>
 
-          <p className="mt-6 max-w-[520px] text-[1.25rem] leading-[1.6] text-text-secondary">
-            Computer Science student specializing in AI/ML and software development.
-          </p>
+          <div className="mt-6 max-w-[560px] space-y-3 text-[1.125rem] leading-[1.6] text-text-secondary">
+            <p>
+              I build AI-powered applications, machine learning solutions, and
+              intelligent software systems that address real-world problems.
+            </p>
+            <p>
+              Currently pursuing a BS in Computer Science at COMSATS
+              University Islamabad, Wah Campus, with a focus on Artificial
+              Intelligence, Machine Learning, and software development.
+            </p>
+          </div>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
@@ -47,37 +50,42 @@ export default function Hero() {
             >
               GitHub
             </a>
+            <a
+              href="#contact"
+              className="rounded-[6px] border border-border-default px-6 py-3 font-medium text-text-primary transition-[transform,border-color,color] duration-150 hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+            >
+              Contact Me
+            </a>
           </div>
         </div>
 
-        {/* Right column — stack card */}
+        {/* Right column — simplified info card: focus, core language, availability */}
         <div
           className="animate-fade-slide-up rounded-md border border-border-subtle bg-bg-secondary p-8"
           style={{ animationDelay: "100ms" }}
         >
           <p className="font-mono text-xs uppercase tracking-[0.08em] text-text-tertiary">
-            Core Stack
+            Current Focus
           </p>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {CORE_STACK.map((tech) => (
-              <span
-                key={tech}
-                className="rounded-[6px] bg-accent-muted px-3 py-1 font-mono text-[0.8125rem] text-accent"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
+          <p className="mt-2 font-display text-lg font-semibold text-text-primary">
+            Artificial Intelligence &amp; Machine Learning
+          </p>
 
           <p className="mt-6 font-mono text-xs uppercase tracking-[0.08em] text-text-tertiary">
-            Focus
+            Core Language
           </p>
-          <p className="mt-3 font-mono text-[0.8125rem] text-text-primary">AI / ML</p>
+          <span className="mt-2 inline-block rounded-[6px] bg-accent-muted px-3 py-1 font-mono text-[0.8125rem] text-accent">
+            Python
+          </span>
 
-          <div className="mt-6 flex items-center gap-2 border-t border-border-subtle pt-6">
-            <span className="h-2 w-2 animate-pulse-dot rounded-full bg-accent" aria-hidden="true" />
-            <p className="font-mono text-[0.8125rem] text-text-secondary">
-              Available for internships
+          <div className="mt-6 flex items-start gap-2 border-t border-border-subtle pt-6">
+            <span
+              className="mt-1.5 h-2 w-2 shrink-0 animate-pulse-dot rounded-full bg-accent"
+              aria-hidden="true"
+            />
+            <p className="font-mono text-[0.8125rem] leading-[1.5] text-text-secondary">
+              Open to AI/ML internships and relevant software development
+              opportunities.
             </p>
           </div>
         </div>

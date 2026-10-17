@@ -12,15 +12,23 @@ export default function About() {
 
           <div className="mt-6 max-w-[720px] space-y-4 text-lg leading-[1.65] text-text-secondary">
             <p>
-              I&apos;m a Computer Science student at COMSATS University Islamabad,
-              Wah Campus, currently in my seventh semester, specializing in
-              AI/ML and software development.
+              I&apos;m a Computer Science student at COMSATS University
+              Islamabad, Wah Campus, with a strong interest in Artificial
+              Intelligence, Machine Learning, and software development.
             </p>
             <p>
-              I&apos;m drawn to applying AI/ML to real-world problems rather
-              than working with it purely in the abstract. I&apos;m currently
-              interning at Quantum Logics, applying what I&apos;ve learned in
-              a professional setting.
+              My focus is on building practical, data-driven solutions and
+              AI-powered applications that solve meaningful problems. I enjoy
+              exploring machine learning techniques, developing software
+              systems, and turning technical ideas into functional projects.
+            </p>
+            <p>
+              Through academic projects, independent learning, and industry
+              experience, I&apos;m continuously strengthening my skills in
+              AI/ML engineering and software development. I&apos;m
+              particularly interested in opportunities where I can contribute
+              to real-world projects, collaborate with experienced
+              professionals, and continue growing as an AI/ML engineer.
             </p>
           </div>
         </Reveal>

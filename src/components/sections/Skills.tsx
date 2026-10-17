@@ -8,10 +8,10 @@ export default function Skills() {
       <Container>
         <Reveal>
           <h2 className="font-mono text-sm uppercase tracking-[0.08em] text-text-tertiary">
-            <span className="font-semibold text-accent">02</span> — Skills
+            <span className="font-semibold text-accent">03</span> — Skills
           </h2>
 
-          <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
+          <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {skillGroups.map((group) => (
               <div key={group.label}>
                 <p className="font-mono text-xs uppercase tracking-[0.08em] text-text-tertiary">

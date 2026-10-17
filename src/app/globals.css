@@ -22,6 +22,11 @@
   --shadow-sm: 0 1px 2px rgb(0 0 0 / 30%);
   --shadow-md: 0 4px 16px rgb(0 0 0 / 35%);
 
+  /* Faint, low-opacity line color for the background grid texture —
+     kept separate from --border-subtle so real borders stay crisp while
+     the background texture stays quiet. */
+  --grid-line: rgb(255 255 255 / 4%);
+
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -65,6 +70,8 @@
 
   --shadow-sm: 0 1px 2px rgb(0 0 0 / 6%);
   --shadow-md: 0 4px 16px rgb(0 0 0 / 8%);
+
+  --grid-line: rgb(0 0 0 / 4%);
 }
 
 /* ==========================================================================
@@ -124,14 +131,14 @@ html[data-theme="light"] {
   border-radius: 2px;
 }
 
-/* Grid texture is baked directly into body's own background (not a
-   separate pseudo-element layer) so there's no z-index/stacking-context
-   risk of it being hidden behind the page's canvas background. */
+/* Grid texture baked into body's own background, using the faint
+   --grid-line token so it stays quiet and content remains the
+   visual priority, per the latest design brief. */
 body {
   background-color: var(--bg-primary);
   background-image:
-    linear-gradient(to right, var(--border-subtle) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--border-subtle) 1px, transparent 1px);
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
   background-size: 48px 48px;
   color: var(--text-primary);
   font-family: var(--font-inter), -apple-system, sans-serif;
@@ -181,7 +188,6 @@ body {
   animation: pulse-dot 2.4s ease-in-out infinite;
 }
 
-/* Gradient text — used sparingly, only on the hero name. */
 .text-gradient {
   background: linear-gradient(90deg, var(--text-primary) 20%, var(--accent) 100%);
   -webkit-background-clip: text;

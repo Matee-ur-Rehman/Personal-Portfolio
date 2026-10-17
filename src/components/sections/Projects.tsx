@@ -12,8 +12,8 @@ export default function Projects() {
     <section id="projects" className="border-t border-border-subtle py-14 md:py-20 lg:py-32">
       <Container>
         <Reveal>
-          <h2 className="font-mono text-xs uppercase tracking-[0.08em] text-text-tertiary">
-            03 — Projects
+                    <h2 className="font-mono text-sm uppercase tracking-[0.08em] text-text-tertiary">
+            <span className="font-semibold text-accent">04</span> — Projects
           </h2>
 
           {projects.length === 0 ? (

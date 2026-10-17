@@ -9,7 +9,7 @@ function TimelineColumn({ heading, entries }: { heading: string; entries: Timeli
       <p className="font-mono text-xs uppercase tracking-[0.08em] text-text-tertiary">
         {heading}
       </p>
-      <div className="mt-5 space-y-6">
+      <div className="mt-5 space-y-8">
         {entries.map((entry) => (
           <div
             key={`${entry.title}-${entry.organization}`}
@@ -21,7 +21,21 @@ function TimelineColumn({ heading, entries }: { heading: string; entries: Timeli
             </h3>
             <p className="mt-0.5 text-sm text-text-secondary">{entry.organization}</p>
             {entry.note && (
-              <p className="mt-1 font-mono text-[0.75rem] text-text-tertiary">{entry.note}</p>
+              <p className="mt-2 font-mono text-[0.75rem] leading-[1.5] text-text-tertiary">
+                {entry.note}
+              </p>
+            )}
+            {entry.bullets && entry.bullets.length > 0 && (
+              <ul className="mt-3 space-y-2">
+                {entry.bullets.map((bullet) => (
+                  <li
+                    key={bullet}
+                    className="text-sm leading-[1.6] text-text-secondary before:mr-2 before:text-accent before:content-['—']"
+                  >
+                    {bullet}
+                  </li>
+                ))}
+              </ul>
             )}
           </div>
         ))}
@@ -36,7 +50,7 @@ export default function Experience() {
       <Container>
         <Reveal>
           <h2 className="font-mono text-sm uppercase tracking-[0.08em] text-text-tertiary">
-            <span className="font-semibold text-accent">04</span> — Experience
+            <span className="font-semibold text-accent">05</span> — Experience
           </h2>
 
           <div className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2">
