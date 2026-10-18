@@ -4,11 +4,11 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden">
       <div
-        className="pointer-events-none absolute -top-40 left-[10%] h-[420px] w-[420px] rounded-full bg-accent/25 blur-[120px]"
+        className="pointer-events-none absolute -top-20 right-[8%] h-[560px] w-[560px] rounded-full bg-accent/25 blur-[140px]"
         aria-hidden="true"
       />
       <div
-        className="pointer-events-none absolute -bottom-32 right-[5%] h-[320px] w-[320px] rounded-full bg-accent/15 blur-[100px]"
+        className="pointer-events-none absolute -bottom-24 left-[5%] h-[300px] w-[300px] rounded-full bg-accent/10 blur-[100px]"
         aria-hidden="true"
       />
 
@@ -23,17 +23,11 @@ export default function Hero() {
             <span className="text-gradient">Matee Ur Rehman</span>
           </h1>
 
-          <div className="mt-6 max-w-[560px] space-y-3 text-[1.125rem] leading-[1.6] text-text-secondary">
-            <p>
-              I build AI-powered applications, machine learning solutions, and
-              intelligent software systems that address real-world problems.
-            </p>
-            <p>
-              Currently pursuing a BS in Computer Science at COMSATS
-              University Islamabad, Wah Campus, with a focus on Artificial
-              Intelligence, Machine Learning, and software development.
-            </p>
-          </div>
+          <p className="mt-6 max-w-[560px] text-[1.125rem] leading-[1.6] text-text-secondary">
+            Computer Science undergraduate building AI-powered applications
+            and machine learning systems — currently focused on applied
+            AI/ML research and real-world software development.
+          </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
@@ -41,6 +35,13 @@ export default function Hero() {
               className="rounded-[6px] bg-accent px-6 py-3 font-medium text-bg-primary transition-[transform,background-color] duration-150 hover:-translate-y-0.5 hover:bg-accent-hover"
             >
               View Projects
+            </a>
+            <a
+              href="/Matee-ur-Rehman-CV.pdf"
+              download
+              className="rounded-[6px] border border-border-default px-6 py-3 font-medium text-text-primary transition-[transform,border-color,color] duration-150 hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+            >
+              Download CV
             </a>
             <a
               href="https://github.com/Matee-ur-Rehman"

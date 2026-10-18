@@ -3,6 +3,7 @@ import About from "@/components/sections/About";
 import WhatIDo from "@/components/sections/WhatIDo";
 import Skills from "@/components/sections/Skills";
 import Projects from "@/components/sections/Projects";
+import Research from "@/components/sections/Research";
 import Experience from "@/components/sections/Experience";
 import Contact from "@/components/sections/Contact";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <WhatIDo />
       <Skills />
       <Projects />
+      <Research />
       <Experience />
       <Contact />
     </>

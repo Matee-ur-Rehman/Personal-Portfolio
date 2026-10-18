@@ -50,7 +50,7 @@ export default function Experience() {
       <Container>
         <Reveal>
           <h2 className="font-mono text-sm uppercase tracking-[0.08em] text-text-tertiary">
-            <span className="font-semibold text-accent">05</span> — Experience
+            <span className="font-semibold text-accent">06</span> — Experience
           </h2>
 
           <div className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2">

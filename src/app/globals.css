@@ -4,27 +4,24 @@
    Design Tokens — Dark mode (default)
    ========================================================================== */
 :root {
-  --bg-primary: #0a0a0c;
-  --bg-secondary: #101014;
-  --bg-tertiary: #17171c;
+  --bg-primary: #050a14;
+  --bg-secondary: #0a1322;
+  --bg-tertiary: #0f1b2e;
 
-  --border-subtle: #232329;
-  --border-default: #2e2e36;
+  --border-subtle: #16233a;
+  --border-default: #1f2f4a;
 
-  --text-primary: #f2f2f0;
-  --text-secondary: #a3a3ad;
-  --text-tertiary: #6b6b75;
+  --text-primary: #f2f5f8;
+  --text-secondary: #9aa8b8;
+  --text-tertiary: #67778c;
 
-  --accent: #4d8dff;
-  --accent-hover: #6ba0ff;
-  --accent-muted: rgb(77 141 255 / 12%);
+  --accent: #38bdf8;
+  --accent-hover: #7dd3fc;
+  --accent-muted: rgb(56 189 248 / 14%);
 
   --shadow-sm: 0 1px 2px rgb(0 0 0 / 30%);
   --shadow-md: 0 4px 16px rgb(0 0 0 / 35%);
 
-  /* Faint, low-opacity line color for the background grid texture —
-     kept separate from --border-subtle so real borders stay crisp while
-     the background texture stays quiet. */
   --grid-line: rgb(255 255 255 / 4%);
 
   --space-1: 0.25rem;
@@ -53,20 +50,20 @@
    Design Tokens — Light mode
    ========================================================================== */
 :root[data-theme="light"] {
-  --bg-primary: #fafaf8;
-  --bg-secondary: #f2f2ef;
-  --bg-tertiary: #eaeae6;
+  --bg-primary: #f7fafc;
+  --bg-secondary: #eef3f6;
+  --bg-tertiary: #e4ebf0;
 
-  --border-subtle: #e2e2dd;
-  --border-default: #d4d4ce;
+  --border-subtle: #dbe4ea;
+  --border-default: #c7d4dc;
 
-  --text-primary: #141416;
-  --text-secondary: #5c5c63;
-  --text-tertiary: #8a8a91;
+  --text-primary: #0f1a22;
+  --text-secondary: #4b5b66;
+  --text-tertiary: #7a8792;
 
-  --accent: #2563eb;
-  --accent-hover: #1d4ed8;
-  --accent-muted: rgb(37 99 235 / 8%);
+  --accent: #0284c7;
+  --accent-hover: #0369a1;
+  --accent-muted: rgb(2 132 199 / 8%);
 
   --shadow-sm: 0 1px 2px rgb(0 0 0 / 6%);
   --shadow-md: 0 4px 16px rgb(0 0 0 / 8%);
@@ -131,9 +128,6 @@ html[data-theme="light"] {
   border-radius: 2px;
 }
 
-/* Grid texture baked into body's own background, using the faint
-   --grid-line token so it stays quiet and content remains the
-   visual priority, per the latest design brief. */
 body {
   background-color: var(--bg-primary);
   background-image:
@@ -189,7 +183,7 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(90deg, var(--text-primary) 20%, var(--accent) 100%);
+  background: linear-gradient(90deg, var(--text-primary) 10%, var(--accent) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

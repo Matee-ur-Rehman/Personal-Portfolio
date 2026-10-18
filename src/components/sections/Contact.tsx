@@ -8,7 +8,7 @@ export default function Contact() {
       <Container>
         <Reveal>
           <h2 className="font-mono text-sm uppercase tracking-[0.08em] text-text-tertiary">
-            <span className="font-semibold text-accent">06</span> — Contact
+            <span className="font-semibold text-accent">07</span> — Contact
           </h2>
 
           <div className="mt-6 max-w-[560px] space-y-3 text-lg leading-[1.6] text-text-secondary">

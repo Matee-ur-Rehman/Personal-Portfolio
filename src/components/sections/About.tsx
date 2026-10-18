@@ -10,25 +10,19 @@ export default function About() {
             <span className="font-semibold text-accent">01</span> — About
           </h2>
 
-          <div className="mt-6 max-w-[720px] space-y-4 text-lg leading-[1.65] text-text-secondary">
+          <div className="mt-6 max-w-[680px] space-y-4 text-lg leading-[1.65] text-text-secondary">
             <p>
-              I&apos;m a Computer Science student at COMSATS University
-              Islamabad, Wah Campus, with a strong interest in Artificial
-              Intelligence, Machine Learning, and software development.
+              I&apos;m a Computer Science undergraduate at COMSATS University
+              Islamabad, Wah Campus, with a strong foundation in
+              programming, data structures, and database systems, and a
+              growing focus on Artificial Intelligence and Machine Learning.
             </p>
             <p>
-              My focus is on building practical, data-driven solutions and
-              AI-powered applications that solve meaningful problems. I enjoy
-              exploring machine learning techniques, developing software
-              systems, and turning technical ideas into functional projects.
-            </p>
-            <p>
-              Through academic projects, independent learning, and industry
-              experience, I&apos;m continuously strengthening my skills in
-              AI/ML engineering and software development. I&apos;m
-              particularly interested in opportunities where I can contribute
-              to real-world projects, collaborate with experienced
-              professionals, and continue growing as an AI/ML engineer.
+              I build practical, data-driven solutions and AI-powered
+              applications — turning technical ideas into functional
+              projects through academic work, independent learning, and
+              industry experience, while continuing to grow as an AI/ML
+              engineer.
             </p>
           </div>
         </Reveal>
