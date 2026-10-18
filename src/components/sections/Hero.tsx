@@ -29,7 +29,7 @@ export default function Hero() {
             AI/ML research and real-world software development.
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center gap-4">
+          <div className="mt-10 flex flex-wrap items-center gap-5">
             <a
               href="#projects"
               className="rounded-[6px] bg-accent px-6 py-3 font-medium text-bg-primary transition-[transform,background-color] duration-150 hover:-translate-y-0.5 hover:bg-accent-hover"
@@ -39,7 +39,7 @@ export default function Hero() {
             <a
               href="/Matee-ur-Rehman-CV.pdf"
               download
-              className="rounded-[6px] border border-border-default px-6 py-3 font-medium text-text-primary transition-[transform,border-color,color] duration-150 hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+              className="rounded-[6px] border border-accent px-6 py-3 font-medium text-accent transition-[transform,background-color,color] duration-150 hover:-translate-y-0.5 hover:bg-accent hover:text-bg-primary"
             >
               Download CV
             </a>
@@ -47,15 +47,15 @@ export default function Hero() {
               href="https://github.com/Matee-ur-Rehman"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-[6px] border border-border-default px-6 py-3 font-medium text-text-primary transition-[transform,border-color,color] duration-150 hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+              className="font-mono text-sm text-text-secondary transition-colors duration-150 hover:text-accent"
             >
-              GitHub
+              GitHub →
             </a>
             <a
               href="#contact"
-              className="rounded-[6px] border border-border-default px-6 py-3 font-medium text-text-primary transition-[transform,border-color,color] duration-150 hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+              className="font-mono text-sm text-text-secondary transition-colors duration-150 hover:text-accent"
             >
-              Contact Me
+              Contact Me →
             </a>
           </div>
         </div>

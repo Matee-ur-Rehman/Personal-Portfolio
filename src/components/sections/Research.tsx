@@ -17,9 +17,14 @@ export default function Research() {
                 key={entry.title}
                 className="rounded-md border border-border-subtle bg-bg-secondary p-6 md:p-8"
               >
-                <span className="inline-block rounded-[6px] bg-accent-muted px-2.5 py-1 font-mono text-[0.6875rem] uppercase tracking-[0.06em] text-accent">
-                  {entry.type}
-                </span>
+                <div className="flex flex-wrap items-center gap-3">
+                  <span className="inline-block rounded-[6px] bg-accent-muted px-2.5 py-1 font-mono text-[0.6875rem] uppercase tracking-[0.06em] text-accent">
+                    {entry.type}
+                  </span>
+                                    <span className="rounded-[6px] bg-accent-muted px-2.5 py-1 font-mono text-[0.6875rem] uppercase tracking-[0.06em] text-accent">
+                    In Progress
+                  </span>
+                </div>
 
                 <h3 className="mt-4 font-display text-xl font-semibold text-text-primary">
                   {entry.title}

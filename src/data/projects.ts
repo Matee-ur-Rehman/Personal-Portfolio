@@ -6,7 +6,6 @@ export const projects: Project[] = [
     name: "StudyMind AI",
     description:
       "An AI study companion that turns PDFs, lecture videos, and articles into chat, quizzes, flashcards, a knowledge graph, and a personalized study roadmap — built so students can turn scattered material into an actual study plan.",
-    role: "Contributor",
     stack: [
       "Python",
       "FastAPI",

@@ -20,10 +20,23 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const siteTitle = "Matee Ur Rehman — AI/ML Engineer | Software Developer";
+const siteDescription =
+  "Portfolio of Matee Ur Rehman, a Computer Science undergraduate building AI-powered applications and machine learning systems.";
+
 export const metadata: Metadata = {
-  title: "Matee Ur Rehman — AI/ML & Software Development",
-  description:
-    "Portfolio of Matee Ur Rehman, Computer Science student specializing in AI/ML and software development.",
+  title: siteTitle,
+  description: siteDescription,
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: siteTitle,
+    description: siteDescription,
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
