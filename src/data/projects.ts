@@ -46,4 +46,13 @@ export const projects: Project[] = [
     featured: true,
     githubUrl: "https://github.com/Matee-ur-Rehman/AI-Chess-Engine",
   },
+  {
+    slug: "smart-institutional-operations",
+    name: "Smart Institutional Operations and Information System",
+    description:
+      "An integrated web and mobile platform to streamline academic and administrative operations for administrators, teachers, students, and parents — with modules for homework, examinations, results, fee tracking, timetables, academic calendars, announcements, and complaint management.",
+    stack: ["Python", "FastAPI", "PostgreSQL", "Flutter"],
+    status: "in-progress",
+    featured: false,
+  },
 ];
