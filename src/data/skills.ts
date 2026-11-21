@@ -17,9 +17,9 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "Frameworks & Libraries",
-    skills: ["Scikit-learn", "PyTorch", "TensorFlow", "NumPy", "Pandas", "FastAPI"],
+    skills: ["Scikit-learn", "PyTorch", "TensorFlow", "NumPy", "Pandas", "FastAPI","Flutter"],
   },
-  { label: "Databases & Tools", skills: ["MySQL", "MongoDB", "Git", "GitHub", "REST APIs"] },
+  { label: "Databases & Tools", skills: ["MySQL","PostgreSQL", "MongoDB", "Git", "GitHub", "REST APIs"] },
   {
     label: "Areas of Interest",
     skills: ["Generative AI", "Large Language Models", "Computer Vision", "NLP"],
