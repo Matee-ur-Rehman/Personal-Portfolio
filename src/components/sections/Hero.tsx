@@ -52,6 +52,14 @@ export default function Hero() {
               GitHub →
             </a>
             <a
+              href="https://www.linkedin.com/in/matee-ur-rehman-5a8a66357/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-sm text-text-secondary transition-colors duration-150 hover:text-accent"
+            >
+              LinkedIn →
+            </a>
+            <a
               href="#contact"
               className="font-mono text-sm text-text-secondary transition-colors duration-150 hover:text-accent"
             >
