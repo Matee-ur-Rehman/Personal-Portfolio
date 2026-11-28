@@ -4,24 +4,37 @@ export interface SkillGroup {
 }
 
 export const skillGroups: SkillGroup[] = [
-  { label: "Programming Languages", skills: ["Python", "C++", "JavaScript"] },
   {
-    label: "AI / ML",
+    label: "Programming Languages",
+    skills: ["Python", "C++", "JavaScript"],
+  },
+  {
+    label: "AI & Machine Learning",
     skills: [
       "Machine Learning",
       "Deep Learning",
-      "Data Preprocessing",
       "Model Training & Evaluation",
-      "RAG Pipelines",
+      "Data Preprocessing",
+      "Natural Language Processing",
+      "Computer Vision",
     ],
   },
   {
     label: "Frameworks & Libraries",
-    skills: ["Scikit-learn", "PyTorch", "TensorFlow", "NumPy", "Pandas", "FastAPI","Flutter"],
+    skills: ["PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "Hugging Face", "FastAPI"],
   },
-  { label: "Databases & Tools", skills: ["MySQL","PostgreSQL", "MongoDB", "Git", "GitHub", "REST APIs"] },
   {
-    label: "Areas of Interest",
-    skills: ["Generative AI", "Large Language Models", "Computer Vision", "NLP"],
+    label: "Generative AI",
+    skills: [
+      "Large Language Models (LLMs)",
+      "Retrieval-Augmented Generation (RAG)",
+      "LangChain",
+      "Prompt Engineering",
+      "Generative AI Applications",
+    ],
+  },
+  {
+    label: "Databases & Tools",
+    skills: ["MySQL", "PostgreSQL", "MongoDB", "Git", "GitHub", "REST APIs"],
   },
 ];
