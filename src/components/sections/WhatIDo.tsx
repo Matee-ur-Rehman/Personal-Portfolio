@@ -3,19 +3,19 @@ import Reveal from "@/components/ui/Reveal";
 
 const FOCUS_AREAS = [
   {
-    title: "Machine Learning",
+    title: "Machine Learning & Deep Learning",
     description:
-      "Developing data-driven solutions through data preprocessing, model training, evaluation, and experimentation.",
+      "Developing intelligent models through data preprocessing, model training, evaluation, and experimentation.",
   },
   {
-    title: "AI-Powered Applications",
+    title: "Generative AI & LLM Applications",
     description:
-      "Building software applications that integrate AI capabilities to solve practical problems.",
+      "Building AI-powered solutions using Large Language Models, RAG, and modern Generative AI technologies.",
   },
   {
-    title: "AI Engineering",
+    title: "AI Application Development",
     description:
-      "Exploring the integration of machine learning models, APIs, and backend systems into functional applications.",
+      "Integrating AI models, APIs, and backend technologies to develop practical, real-world applications.",
   },
 ];
 
@@ -28,7 +28,7 @@ export default function WhatIDo() {
             <span className="font-semibold text-accent">02</span> — What I Do
           </h2>
 
-          <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
+          <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
             {FOCUS_AREAS.map((area) => (
               <div key={area.title} className="border-l border-border-subtle pl-5">
                 <h3 className="font-display text-lg font-semibold text-text-primary">
